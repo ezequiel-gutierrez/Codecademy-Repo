@@ -1,0 +1,37 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-image: url(../resources/pattern.jpeg);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 100px;
+    font-weight: bold;
+    color: khaki;
+}
+
+.sectionTitles {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+.brushSection h2 {
+    background-color: mediumspringgreen;
+}
+
+.frameSection h2 {
+    background-color: lightcoral;
+}
+
+.paintSection h2 {
+    background-color: skyblue;
+}
+
+.blueText {
+    font-weight: bold;
+    color: blue;
+}
