@@ -1,0 +1,21 @@
+.ifPhoneVertical {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .ifPhoneVertical {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    }
+
+    header, main {
+        display: none;
+    }
+}
