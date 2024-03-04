@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Cheatsheet</title>
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./tables.css">
+    </head>
+    <body>
+        <header>
+            <h1>My Personal Cheatsheet</h1>
+            <nav>
+                <a href="#html">HTML</a>
+                <a href="#css">CSS</a>
+                <a href="#javaScript">JavaScript</a>
+            </nav>
+        </header>
+        <main>
+            <section id="html">
+                <h2>
+                    HTML:
+                </h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col" colspan="3">
+                                Table tags
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Tag</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="monospace">&lt;table&gt;</th>
+                            <td>Table Tag</td>
+                            <td>Used to create a table. It has a closing tag too</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="monospace">&lt;thead&gt;</th>
+                            <td>Table Head</td>
+                            <td>Used to organize your table, this tag is used to mark the head of your table.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="monospace">&lt;th&gt;</th>
+                            <td>Table Header</td>
+                            <td>Used to create the header of the table. It can have the <span class="monospace">scope</span> attribute</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="monospace">&lt;tr&gt;</th>
+                            <td>Table Row</td>
+                            <td>Used to create a row on the table.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="monospace">&lt;td&gt;</th>
+                            <td>Table Data</td>
+                            <td>Used to add data to a <span class="monospace">&lt;tr&gt;</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="monospace">&lt;tfoot&gt;</th>
+                            <td>Table Foot</td>
+                            <td>Used to organize your table, this tag is used to mark the foot of your table.</td>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Attributes</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Attribute</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="monospace">colspan</th>
+                            <td>Column Span</td>
+                            <td>Used to describe how long should your row extend (Vertically)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="monospace">rowspan</th>
+                            <td>Row Span</td>
+                            <td>Used to describe how long should your row extend (Horizontally)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="monospace">scope</th>
+                            <td>Scope</td>
+                            <td>Used to describe the header cells, it tell you weather the header applies to a column or a row.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="css">
+                <h2>
+                    CSS:
+                </h2>
+                <table class="cssTable">
+                    <thead>
+                        <tr>
+                            <th scope="col" colspan="3">
+                                Specificity
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                Type
+                            </th>
+                            <th scope="col">
+                                Example
+                            </th>
+                            <th scope="col">Specificity Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Universal Selector
+                            </td>
+                            <td class="monospace">
+                                *
+                            </td>
+                            <td>
+                                Lowest specificity
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Type Selectors
+                            </td>
+                            <td class="monospace">
+                                p
+                            </td>
+                            <td>
+                                Low specificity
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Pseudo Elements
+                            </td>
+                            <td class="monospace">
+                                ::before
+                            </td>
+                            <td>
+                                Low specificity
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Classes
+                            </td>
+                            <td class="monospace">
+                                .box
+                            </td>
+                            <td>
+                                Medium specificity
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Pseudo Classes
+                            </td>
+                            <td class="monospace">
+                                :hover
+                            </td>
+                            <td>
+                                Medium specificity
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ID Selectors
+                            </td>
+                            <td class="monospace">
+                                #container
+                            </td>
+                            <td>
+                                High specificity
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Importance Declaration
+                            </td>
+                            <td class="monospace">
+                                !important
+                            </td>
+                            <td>
+                                Despite not a selector, it has the highest specificity level on CSS
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="cssDisclaimer">Be aware that inline styling has the highest level of specificity</p>
+            </section>
+            <section id="javaScript">
+                <h2>
+                    JavaScript:
+                </h2>
+                <p>
+                    Coming soon on January 2002 XD <br>
+                    Seriously, I have plans for this part in the future.
+                </p>
+            </section>
+        </main>
+    </body>
+</html>
