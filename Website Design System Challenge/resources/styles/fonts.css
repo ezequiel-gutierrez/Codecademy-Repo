@@ -1,0 +1,88 @@
+/* For latin */
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/comfortaa/v45/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMDrMfIA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* For Thai */
+@font-face {
+    font-family: 'IBM Plex Sans Thai';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/ibmplexsansthai/v10/m8JPje1VVIzcq1HzJq2AEdo2Tj_qvLqMHdYgVcM.woff2) format('woff2');
+    unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+
+/* For Latin */
+@font-face {
+    font-family: 'IBM Plex Sans Thai';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/ibmplexsansthai/v10/m8JPje1VVIzcq1HzJq2AEdo2Tj_qvLqMCdYg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* For Latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+
+}
+
+/* For Latin */
+@font-face {
+    font-family: 'Courier Prime';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/courierprime/v9/u-450q2lgwslOqpF_6gQ8kELawFpWg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+* {
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+.comfortaa {
+    font-family: "Comfortaa", sans-serif;
+}
+
+.lato {
+    font-family: "Lato", sans-serif;
+}
+
+.ibmPlexSansThai {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+}
+
+.courierPrime {
+    font-family: "Courier Prime", Courier, monospace;
+}
+
+.emoji {
+    font-family: "Noto Color Emoji";
+}
+
+.headingSize {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: "Classic", Arial, Helvetica, sans-serif;
+}
+
+.textStyles > div > p {
+    font-weight: bold;
+}
+
+.boldFont {
+    font-weight: bold;
+}
+
+.fonts .title {
+    text-decoration: underline black;
+    margin: 5px 0;
+}

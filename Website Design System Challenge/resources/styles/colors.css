@@ -1,0 +1,33 @@
+.colors {
+    display: flex;
+    justify-content: space-between;
+}
+
+.colors div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 84px;
+    color: rgb(255, 255, 255);
+}
+
+.softRed {
+    background-color: rgb(255, 130, 130);
+}
+
+.redPeach {
+    background-color: rgb(246,161,146);
+}
+
+.pinkPeach {
+    background-color: rgb(246,176,146);
+}
+
+.peachYogurt {
+    background-color: rgb(246,196,146);
+}
+
+.grey {
+    background-color: rgb(211, 211, 211);
+}
