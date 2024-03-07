@@ -1,0 +1,16 @@
+header {
+    border-bottom: medium solid rgb(34, 34, 52);
+}
+
+body {
+    margin: 30px;
+}
+
+.colors, .fonts, .textStyles, .buttons {
+    margin-top: 10px;
+    border: medium solid rgb(59, 59, 78);
+    padding: 0 15px;
+    padding-bottom: 20px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
