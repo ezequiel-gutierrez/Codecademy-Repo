@@ -5,7 +5,7 @@ p.titleOfTheShowcase {
 
 .basicButtons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .basicButtons label {
@@ -48,19 +48,22 @@ p.titleOfTheShowcase {
     transition: none;
 }
 
-#defaultShowcase {
+.showcaseDisplay {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 40px;
+}
+
+.showcaseArticle {
     border: medium solid rgb(255, 130, 130);
     border-radius: 10px;
     width: 300px;
-    height: 325px;
-    margin-left: 50px;
+    height: 320px;
 }
 
-.image > p {
+.image {
     color: rgb(255, 255, 255);
     font-weight: bold;
-}
-.image {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,9 +73,22 @@ p.titleOfTheShowcase {
     border-bottom: solid medium rgb(255, 130, 130);
 }
 
-.description p {
+.description {
     font-weight: bold;
     text-decoration: underline;
     margin-left: 5px;
 }
 
+.hoveredShowcase {
+    transform: scale(1.1);
+}
+
+.exampleShowcase:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.exampleShowcase:not(:hover) {
+    transform: scale(1);
+    transition: all 0.3s ease-in;
+}
