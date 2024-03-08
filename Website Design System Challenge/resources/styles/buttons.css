@@ -41,6 +41,7 @@ p.titleOfTheShowcase {
 .showcaseDisplay {
     display: flex;
     justify-content: space-around;
+    align-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 40px;
 }
@@ -50,8 +51,7 @@ p.titleOfTheShowcase {
     border-radius: 10px;
     width: 300px;
     height: 320px;
-    margin: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .image {
