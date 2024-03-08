@@ -50,8 +50,7 @@ p.titleOfTheShowcase {
     border-radius: 10px;
     width: 300px;
     height: 320px;
-    margin-right: 10px;
-    margin-bottom: 40px;
+    margin: 0 10px 40px;
 }
 
 .image {
