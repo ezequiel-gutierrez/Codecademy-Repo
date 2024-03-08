@@ -15,4 +15,5 @@ body {
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
     min-width: fit-content;
+    padding: 0 15px;
 }

@@ -3,19 +3,7 @@ p.titleOfTheShowcase {
     text-decoration: underline;
 }
 
-.basicButtons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.basicButtons label {
-    margin-left: 50px;
-    margin-bottom: 10px;
-    width: fit-content;
-}
-
-.basicButtons button {
+.basicButtons button, .buttonExample button {
     cursor: pointer;
     font-family: "Comfortaa";
     font-weight: bold;
@@ -28,6 +16,7 @@ p.titleOfTheShowcase {
     width: 150px;
     height: 100px;
 }
+
 
 #basicHover {
     background-color: rgb(235, 100, 100);
@@ -85,7 +74,6 @@ p.titleOfTheShowcase {
 
 .hoveredShowcase {
     transform: scale(1.1);
-    margin-left: 15px;
 }
 
 .exampleShowcase:hover {
