@@ -85,3 +85,12 @@ p.titleOfTheShowcase {
     transform: scale(1);
     transition: all 0.3s ease-in;
 }
+
+@media screen and (max-width: 600px) {
+    .showcaseDisplay {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
