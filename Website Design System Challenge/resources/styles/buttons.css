@@ -6,6 +6,7 @@ p.titleOfTheShowcase {
 .basicButtons {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .basicButtons label {
@@ -51,6 +52,7 @@ p.titleOfTheShowcase {
 .showcaseDisplay {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding-bottom: 40px;
 }
 
@@ -59,6 +61,7 @@ p.titleOfTheShowcase {
     border-radius: 10px;
     width: 300px;
     height: 320px;
+    margin-bottom: 40px;
 }
 
 .image {
