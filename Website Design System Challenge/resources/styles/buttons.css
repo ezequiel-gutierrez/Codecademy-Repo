@@ -41,7 +41,6 @@ p.titleOfTheShowcase {
 .showcaseDisplay {
     display: flex;
     justify-content: space-around;
-    align-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 40px;
 }
@@ -53,6 +52,18 @@ p.titleOfTheShowcase {
     height: 320px;
     margin-bottom: 40px;
 }
+
+@media screen and (min-width = 600px) {
+    .showcaseDisplay {
+        display: flex;
+        flex-flow: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+    
+}
+
 
 .image {
     color: rgb(255, 255, 255);
