@@ -6,7 +6,7 @@ body {
     margin: 30px;
 }
 
-.colors, .fonts, .textStyles, .buttons, .showcaseElements {
+section {
     background-color: rgb(253, 238, 223);
     margin-top: 10px;
     border: medium solid rgb(59, 59, 78);

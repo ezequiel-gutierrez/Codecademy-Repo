@@ -72,7 +72,13 @@ p.titleOfTheShowcase {
 }
 
 .hoveredShowcase {
-    transform: scale(1.1);
+    width: 330px;
+    height: 352px;
+}
+
+.hoveredShowcaseImage {
+    width: 330px;
+    height: 154px;
 }
 
 .exampleShowcase:hover {
@@ -83,6 +89,12 @@ p.titleOfTheShowcase {
 .exampleShowcase:not(:hover) {
     transform: scale(1);
     transition: all 0.3s ease-in;
+}
+
+.showcaseExample {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width: 600px) {
