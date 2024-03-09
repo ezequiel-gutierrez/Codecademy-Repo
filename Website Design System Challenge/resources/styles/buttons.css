@@ -42,7 +42,6 @@ p.titleOfTheShowcase {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding-bottom: 40px;
 }
 
 .showcaseArticle {
@@ -92,16 +91,14 @@ p.titleOfTheShowcase {
 }
 
 .showcaseExample {
-    margin: 20px;
+    margin: 0 20px;
     display: flex;
     justify-content: center;
 }
 
 @media screen and (max-width: 600px) {
-    .showcaseDisplay {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+
+    .showcaseDisplay, .showcaseExample {
+        transform: scale(0.9);
     }
 }

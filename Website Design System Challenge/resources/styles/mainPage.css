@@ -16,3 +16,11 @@ section {
     min-width: fit-content;
     padding: 0 15px;
 }
+
+
+@media screen and (max-width: 400px) {
+    section {
+        min-width: 300px;
+        padding: 0 10px
+    }
+}
