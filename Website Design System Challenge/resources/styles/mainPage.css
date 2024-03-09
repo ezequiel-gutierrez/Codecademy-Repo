@@ -19,8 +19,17 @@ section {
 
 
 @media screen and (max-width: 400px) {
+    
+    body {
+        margin: 0px;
+    }
+
+    header {
+        padding-left: 5px;
+    }
+
     section {
-        min-width: 300px;
-        padding: 0 10px
+        min-width: 280px;
+        padding: 0 15px
     }
 }
