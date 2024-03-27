@@ -1,9 +1,45 @@
 :root {
     font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 .mobile {
     display: none;
 }
 
+nav .icon {
+    height: 1rem;
+    width: auto;
+}
+
+header .content {
+    height: 5.31rem;
+    padding: 0 1.87rem;
+    display: flex;
+    align-items: center;
+}
+
+header .content .logo {
+    color: #4a4a4a;
+    font-family: "Roboto Mono";
+    font-size: 1.5rem;
+    flex: 1;
+}
+
+.desktop ul {
+    color: #4a4a4a;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: "Roboto";
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desktop li img {
+    margin-left: 10px;
+    vertical-align: middle;
+}
 /* height 5.31 padding 1.87 */
