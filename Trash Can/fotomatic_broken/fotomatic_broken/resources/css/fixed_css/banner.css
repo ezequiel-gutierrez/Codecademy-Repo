@@ -1,0 +1,21 @@
+.banner {
+    background-image: url("../../images/banner-landingpage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#sign-up-cta {
+    padding: 10.625rem 0;
+    padding-left: 6.25rem;
+}
+
+.content.center {
+    text-align: center;
+    width: 35.5rem;
+    max-width: 35.5rem;
+    background-color: #9dc20a;
+    border: 1px solid #979797;
+    border-radius: 4px;
+    padding: 0 5rem;
+}
