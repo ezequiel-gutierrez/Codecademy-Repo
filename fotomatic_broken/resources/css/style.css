@@ -1,5 +1,13 @@
 /* Universal Styles */
 
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -38,7 +46,9 @@ html {
 
 header {
   position: fixed;
+  z-index: 1;
   width: 100%;
+  height: 5.3125rem;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
 }
@@ -50,6 +60,10 @@ header .content {
 }
 
 header .logo {
+  font-family: "Roboto Mono";
+  font-weight: 400;
+  color: #4a4a4a;
+  font-size: 1.5rem;
   flex: 1;
 }
 
@@ -83,12 +97,12 @@ header .mobile {
   }
 
   header .mobile {
-    display: block;
+    display: inline;
     width: 100%;
   }
 
   header .content {
-    padding: .5rem 0;
+    padding: 1.5rem 0;
   }
 
   header .mobile ul {
@@ -112,14 +126,22 @@ header .mobile {
 
 /* Sign Up Section */
 
+.banner {
+  background-image: url("../images/banner-landingpage.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 #sign-up-section {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   height: 43.5rem;
 }
 
 #sign-up-cta {
+  margin-left: 6.25rem;
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
@@ -212,21 +234,28 @@ header .mobile {
 #features-section {
   display: flex;
   justify-content: space-between;
-  padding: 4rem 5%;
+  padding: 0 5%;
+  padding-top: 4rem;
+  padding-bottom: 2.875rem;
   background-color: #f3f3f3;
 }
 
 .feature {
   flex: 1;
-  padding: 2rem;
-  margin: 0px 1.25rem;
+  margin: 0px 1rem;
   background-color: white;
 }
 
 .feature .image-container {
   width: 90%;
   height: 65%;
-  margin: 0 auto;
+  margin: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
 }
 
 .feature h2 {
@@ -241,6 +270,12 @@ header .mobile {
   line-height: 1.2;
   font-weight: 300;
   color: #4a4a4a;
+}
+
+.feature .content {
+  margin: 0 auto;
+  width: 90%;
+  height: 9.1875rem;
 }
 
 @media only screen and (max-width: 890px) {
@@ -271,7 +306,7 @@ header .mobile {
 /* Filters Section */
 
 #filters-section {
-  padding: 4rem 0;
+  padding: 4rem 1%;
   background-color: #4a4a4a;
 }
 
@@ -284,18 +319,23 @@ header .mobile {
   font-size: 2.25rem;
   font-weight: bold;
   color: white;
+  opacity: 100%;
+  line-height: 1.4;
 }
 
 #filters-section .content h3 {
+  width: 45%;
+  margin: 0 auto;
   font-size: 1rem;
   line-height: 1.4;
   font-weight: 300;
   color: white;
+  opacity: 80%;
 }
 
 #filters-section .images-container {
-  max-width: 100%;
-  padding: 0 1%;
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 760px) {
@@ -334,11 +374,11 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
@@ -372,7 +412,7 @@ header .mobile {
 
 footer {
   background-color: #9b9b9b;
-  padding: 1.5rem 2rem;
+  padding: 1.9rem 2rem;
 }
 
 footer .content {
