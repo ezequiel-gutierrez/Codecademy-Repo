@@ -112,17 +112,10 @@ span.unique {
         align-items: center;
         background-color: rgb(240, 240, 240);
         margin-bottom: 2rem;
-        padding: 3rem;
+        padding: 0.4rem;
         text-align: center;
         font-size: 2.5rem;
         font-family: "Bowlby One SC", Arial, sans-serif;
-    }
-
-    .hero-text {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: solid 0.5rem rgba(0, 89, 223, 0.6);
-        overflow: hidden;
+        border-bottom: solid 0.5rem rgba(0, 89, 223, 0.6);
     }
 }
