@@ -23,6 +23,7 @@ html, body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Commissioner", Arial, Helvetica, sans-serif;
 }
 
 /* End of Reset */
@@ -135,6 +136,31 @@ span.unique {
         height: 50vh;
         background-color: rgb(0, 89, 223);
         color: rgb(240, 240, 240);
-        font-family: "Commissioner", Arial, Helvetica, sans-serif;
+    }
+}
+
+/* End of Our Products */
+
+
+
+/* div pageProductsOverview */
+
+
+
+/* Phone ProductsOverview */
+@media only screen and (max-width: 768px) {
+    .products-overview {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: rgb(217, 217, 217);
+        padding: 3rem 0.8rem;
+    }
+
+    .product-container {
+        background-color: rgb(240, 240, 240);
+        border-radius: 2px;
+        box-shadow: 0px 0px 8px rgba(10, 10, 10, 0.8);
+        margin-bottom: 2rem;
     }
 }
