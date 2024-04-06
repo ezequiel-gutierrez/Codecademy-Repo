@@ -126,7 +126,7 @@ span.unique {
         overflow: hidden;
     }
 
-    .hero-text h2 {
-        margin: 2rem;
+    .hero-text h1 {
+        padding: 2rem;
     }
 }
