@@ -24,6 +24,8 @@ html, body{
     padding: 0;
     box-sizing: border-box;
     font-family: "Commissioner", Arial, Helvetica, sans-serif;
+    --dark-gray: rgb(217, 217, 217);
+    --light-gray: rgb(240, 240, 240);
 }
 
 /* End of Reset */
@@ -114,7 +116,9 @@ span.unique {
         padding: 0.4rem;
         text-align: center;
         font-size: 2.5rem;
-        font-family: "Bowlby One SC", Arial, sans-serif;
+        font-family: "Passion One", Arial, sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
     }
 }
 /* End of hero section */
@@ -149,22 +153,42 @@ span.unique {
 
 /* Phone ProductsOverview */
 @media only screen and (max-width: 768px) {
-    .products-overview {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        background-color: rgb(217, 217, 217);
-        padding: 3rem 0.8rem;
+
+    .product-container.dark-grey {
+        background-color: var(--dark-gray);
     }
 
     .product-container {
-        background-color: rgb(240, 240, 240);
-        border-radius: 2px;
-        box-shadow: 0px 0px 8px rgba(10, 10, 10, 0.8);
-        margin-bottom: 2rem;
+        background-color: var(--light-gray);
     }
 
-    .product-description p {
-        display: none;
+    .products-overview {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        color: rgb(10, 10, 10);
     }
+
+    .product-image-and-title {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 1.5rem;
+    }
+
+    .product-image-and-title svg {
+        flex: 1;
+        height: 4rem;
+    }
+
+    .product-image-and-title h3 {
+        font-weight: 900;
+        flex: 3;
+    }
+
+    .product-description {
+        padding: 0 0.8rem;
+        padding-bottom: 1rem;
+    }
+
 }
