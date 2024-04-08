@@ -117,6 +117,8 @@ span.unique {
         text-align: center;
         font-size: 2.5rem;
         font-family: "Passion One", Arial, sans-serif;
+        letter-spacing: 1px;
+        line-height: 4rem;
         font-weight: 900;
         text-transform: uppercase;
     }
@@ -191,4 +193,61 @@ span.unique {
         padding-bottom: 1rem;
     }
 
+}
+
+/* End of Product Overview*/
+
+
+
+/* Section pageOurTeam */
+
+
+
+/* Phone OurTeam */
+@media only screen and (max-width: 768px) {
+
+    .our-team {
+        background-color: rgb(0, 89, 223);
+        color: rgba(240, 240, 240);
+    }
+    
+    .our-team, .team-members, .team-member-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .our-team-introduction {
+        font-family: "Cinzel", Georgia, 'Times New Roman', Times, serif;
+        padding: 3rem 0;
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+
+    .our-team ul {
+        list-style: none;
+        font-weight: 600;
+        line-height: 1.4rem;
+    }
+    
+    .member-information {
+        padding-top: 1.25rem;
+        padding-bottom: 3.75rem;    
+    }
+
+
+    div.member-image {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        width: 50%;
+        border: solid medium var(--dark-gray);
+        background-color: rgb(240, 240, 240);
+    }
+
+    div.small-image {
+        padding: 5.5rem 0;
+        width: 143%;
+    }
+    
 }
