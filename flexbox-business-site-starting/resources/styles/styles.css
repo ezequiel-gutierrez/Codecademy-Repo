@@ -211,7 +211,7 @@ span.unique {
         color: rgba(240, 240, 240);
     }
     
-    .our-team, .team-members, .team-member-card {
+    .our-team, .team-members {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -225,14 +225,16 @@ span.unique {
     }
 
     .our-team ul {
-        list-style: none;
+        padding-right: 0.1rem;
         font-weight: 600;
-        line-height: 1.4rem;
+        line-height: 1.6rem;
     }
     
     .member-information {
         padding-top: 1.25rem;
-        padding-bottom: 3.75rem;    
+        padding-bottom: 3.75rem;
+        width: 250px;
+        align-self: center;
     }
 
 
@@ -240,14 +242,23 @@ span.unique {
         display: flex;
         justify-content: center;
         overflow: hidden;
-        width: 50%;
+        width: 250px;
         border: solid medium var(--dark-gray);
+        margin: 0 auto;
         background-color: rgb(240, 240, 240);
     }
 
-    div.small-image {
-        padding: 5.5rem 0;
-        width: 143%;
+    .small-image {
+        padding-top: 4.5rem;
+        padding-bottom: 15rem;
     }
     
+    .team-member-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 400px;
+        /* border: red solid medium; */
+    }
+
 }
