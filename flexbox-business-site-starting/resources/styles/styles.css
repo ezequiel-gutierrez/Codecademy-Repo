@@ -330,7 +330,7 @@ section.reviews {
 
     .review-post-image {
         flex: 1;
-        margin: 0.5rem;
+        padding: 5px;
     }
 
     
@@ -344,6 +344,9 @@ section.reviews {
 
     .review-post-title-and-rating {
         flex: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: first baseline;
     }
     
     .review-post {
@@ -353,6 +356,11 @@ section.reviews {
         margin: 0;
     }
     
+    .review-rating ul > li {
+        display: inline;
+        list-style: none;
+    }
+
 }
 
 .page-body, footer, header {
