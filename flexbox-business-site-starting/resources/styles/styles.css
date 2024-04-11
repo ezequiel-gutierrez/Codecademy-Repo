@@ -30,8 +30,6 @@
 /* Reset margins and padding */
 
 html, body{
-    width: 100vw;
-    overflow-x: hidden;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -40,12 +38,77 @@ html, body{
     --light-gray: rgb(240, 240, 240);
 }
 
+@media only screen and (max-width: 768px) {
+    html, body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+}
+
 /* End of Reset */
 
 
 
 /* pageHeaders */
 
+.mobile {
+    display: none;
+}
+
+nav.desktop {
+    width: 100%;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+    border-bottom: solid 1px black;
+}
+
+.desktop .desktop-logo {
+    padding-left: 1rem;
+    width: 30vw;
+}
+
+.desktop-logo svg {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.desktop-buttons {
+    width: 70vw;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.desktop-buttons button {
+    height: 100%;
+    padding: 0 3rem;
+    background-color: rgb(240, 240, 240);
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.desktop-buttons button:hover {
+    background-color: rgb(0, 89, 223);
+    color: rgb(240, 240, 240);
+    transition: all 600ms ease;
+}
+
+.desktop-buttons button:active {
+    background-color: rgb(0, 59, 193);
+    color: var(--dark-gray);
+    transition: none;
+}
+
+.desktop-buttons .search-icon.desktop {
+    margin: 0 1rem;
+    cursor: pointer;
+}
 
 
 /* Phone Header and Nav */
@@ -108,8 +171,145 @@ html, body{
 
 /* pageHero */
 
+section.hero {
+    overflow: hidden;
+    height: calc(100vh - 86px);
+    background-image: url(../stock-images/white-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: 85%;
+    border: solid 5px rgb(0, 89, 223);
+}
+
+.hero-text h1 {
+    font-family: "Passion One", Arial, sans-serif;
+    letter-spacing: 1%;
+    line-height: 4rem;
+    padding: 8% 3rem;
+    margin: 0;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
 span.unique {
     color:rgb(0, 89, 223);
+}
+
+.icons-on-display-top {
+    margin-top: 1%;
+}
+
+.icons-on-display-bottom {
+    margin-bottom: 1%;
+}
+
+.icons-on-display-top, .icons-on-display-bottom {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.icons-on-display-top img, .icons-on-display-bottom img {
+    display: inline;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    opacity: 0;
+    animation: move-and-scale 14s linear infinite;
+}
+
+.icons-on-display-bottom img {
+    animation-direction: reverse;
+}
+
+.icons-on-display-top img:nth-child(1), .icons-on-display-bottom img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.icons-on-display-top img:nth-child(2), .icons-on-display-bottom img:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.icons-on-display-top img:nth-child(3), .icons-on-display-bottom img:nth-child(3) {
+    animation-delay: 2s;
+}
+
+.icons-on-display-top img:nth-child(4), .icons-on-display-bottom img:nth-child(4) {
+    animation-delay: 3s;
+}
+
+.icons-on-display-top img:nth-child(5), .icons-on-display-bottom img:nth-child(5) {
+    animation-delay: 4s;
+}
+
+.icons-on-display-top img:nth-child(6), .icons-on-display-bottom img:nth-child(6) {
+    animation-delay: 5s;
+}
+
+.icons-on-display-top img:nth-child(7), .icons-on-display-bottom img:nth-child(7) {
+    animation-delay: 6s;
+}
+
+.icons-on-display-top img:nth-child(8), .icons-on-display-bottom img:nth-child(8) {
+    animation-delay: 7s;
+}
+
+.icons-on-display-top img:nth-child(9), .icons-on-display-bottom img:nth-child(9) {
+    animation-delay: 8s;
+}
+
+.icons-on-display-top img:nth-child(10), .icons-on-display-bottom img:nth-child(10) {
+    animation-delay: 9s;
+}
+
+.icons-on-display-top img:nth-child(11), .icons-on-display-bottom img:nth-child(11) {
+    animation-delay: 10s;
+}
+
+.icons-on-display-top img:nth-child(12), .icons-on-display-bottom img:nth-child(12) {
+    animation-delay: 11s;
+}
+
+.icons-on-display-top img:nth-child(13), .icons-on-display-bottom img:nth-child(13) {
+    animation-delay: 12s;
+}
+
+.icons-on-display-top img:nth-child(14), .icons-on-display-bottom img:nth-child(14) {
+    animation-delay: 13s;
+}
+
+
+
+/* Keyframe for icons */
+@keyframes move-and-scale {
+    0% {
+        opacity: 0;
+        right: 0%
+    }
+
+    50% {
+        transform: scale(1.4) translateY(-30%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1) translateY(-50%);
+        opacity: 0;
+        right: 100%
+    }
 }
 
 /* Phone Hero */
@@ -117,6 +317,10 @@ span.unique {
 
     section.page-body {
         width: 100vw;
+    }
+
+    .icons-on-display-top, .icons-on-display-bottom {
+        display: none;
     }
 
     section.hero {
