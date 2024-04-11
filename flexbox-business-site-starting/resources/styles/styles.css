@@ -127,7 +127,6 @@ span.unique {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0.2rem;
         text-align: center;
         font-size: 2.5rem;
         font-family: "Passion One", Arial, sans-serif;
@@ -136,6 +135,10 @@ span.unique {
         font-weight: 900;
         text-transform: uppercase;
         width: 100%;
+    }
+
+    section.hero h1 {
+        padding: 0 2.5rem;
     }
 }
 /* End of hero section */
@@ -376,6 +379,9 @@ section.reviews {
         display: inline;
     }
 
+    .review-post-text {
+        padding: 0 0.2rem;
+    }
 }
 
 /* End of pageReviews */
