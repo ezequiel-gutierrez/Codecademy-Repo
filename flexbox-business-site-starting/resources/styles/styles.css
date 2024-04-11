@@ -323,17 +323,24 @@ section.reviews {
         letter-spacing: 2px;
     }
 
+    .review-post {
+        padding: 2.5rem 0;
+        box-shadow: 0px 0px 1px;
+    }
+    
     .review-post-overview {
         display: flex;
-        align-items: flex-start;
     }
 
     .review-post-image {
         flex: 1;
-        padding: 5px;
+        padding: 0.4rem;
     }
 
-    
+    .review-post-title-and-rating {
+        flex: 5;
+    }
+
     .review-post-image img {
         width: 95%;
         height: auto;
@@ -343,22 +350,30 @@ section.reviews {
     }
 
     .review-post-title-and-rating {
-        flex: 5;
+        height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: first baseline;
     }
-    
-    .review-post {
-        overflow: hidden;
-        box-shadow: 0px 0px 1px;
-        padding: 2.5rem 0.5rem;
+
+    .review-title > h2 {
+        text-wrap: wrap;
         margin: 0;
+        padding-bottom: 0.05rem;
     }
-    
-    .review-rating ul > li {
-        display: inline;
+
+    .review-title {
+        display: flex;
+        justify-content: start;
+    }
+
+    .review-rating > ul {
         list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .review-rating > ul > li {
+        display: inline;
     }
 
 }
