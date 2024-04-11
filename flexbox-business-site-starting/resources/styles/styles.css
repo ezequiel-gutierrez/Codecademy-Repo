@@ -51,7 +51,7 @@ html, body{
 /* Phone Header and Nav */
 @media only screen and (max-width: 768px) {
 
-    header .desktop, .footer-logo {
+    header .desktop{
         display: none;
     }
     
@@ -387,3 +387,37 @@ section.reviews {
 
 
 /* Phone Footer */
+@media only screen and (max-width: 768px) {
+
+    footer {
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: rgb(240, 240, 240);
+        background-color: rgb(10, 10, 10);
+    }
+
+    .logo-and-contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .footer-logo {
+        width: 30vw;
+    }
+
+    .footer-logo svg {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-information > ul {
+        list-style: none;
+        padding: 0;
+        padding-left: 30px;
+        margin: 20px auto;
+    }
+}
