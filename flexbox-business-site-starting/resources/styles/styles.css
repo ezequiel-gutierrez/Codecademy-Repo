@@ -248,40 +248,40 @@ span.unique {
         border-top: solid 3px rgb(240, 240, 240);
         border-bottom: solid 3px rgb(240, 240, 240);
     }
-
-    .our-team ul {
-        padding-right: 0.17rem;
-        font-weight: 600;
-        line-height: 1.6rem;
-        background-color: rgba(0, 89, 223, 0.9);
-        border-radius: 10px;
-        padding-top: 0.2rem;
-        padding-bottom: 0.2rem;
-    }
     
-    .member-information {
-        padding-top: 1.25rem;
-        padding-bottom: 3.75rem;
-        width: 250px;
-        align-self: center;
-    }
-
-
     div.member-image {
         display: flex;
         justify-content: center;
         overflow: hidden;
         width: 250px;
-        border: solid medium var(--dark-gray);
+        height: 250px;
+        border: solid 3px var(--dark-gray);
         margin: 0 auto;
         background-color: rgb(240, 240, 240);
     }
-
-    .small-image {
-        padding-top: 4.5rem;
-        padding-bottom: 15rem;
+    
+    .small-image img {
+        transform: scale(0.7);
     }
     
+    .member-information {
+        padding-bottom: 3.75rem;
+        width: 256px;
+        margin: 0 auto;
+    }
+
+    .member-information ul {
+        color:rgb(10, 10, 10);
+        background-color: var(--dark-gray);
+        padding: 0.5rem 0.2rem;
+        margin: 0;
+        list-style: none;
+    }
+
+    .member-information > ul > li {
+        padding-bottom: 0.3rem;
+    }
+
     .team-member-card {
         display: flex;
         flex-direction: column;
@@ -289,7 +289,7 @@ span.unique {
         width: 400px;
         /* border: red solid medium; */
     }
-
+    
 }
 
 /* End of pageOurTeam */
@@ -378,7 +378,12 @@ section.reviews {
 
 }
 
-.page-body, footer, header {
-    width: 100vw;
-    overflow: hidden;
-}
+/* End of pageReviews */
+
+
+
+/* Start of pageFooter */
+
+
+
+/* Phone Footer */
