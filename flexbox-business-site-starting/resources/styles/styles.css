@@ -198,34 +198,33 @@ html, body{
         align-items: center;
         justify-content: center;
         width: 85%;
-        height: 85%;
+        height: 95%;
         border: solid 5px rgb(0, 89, 223);
+        overflow-y: hidden;
     }
 
     .hero-text h1 {
         font-family: "Passion One", Arial, sans-serif;
         letter-spacing: 1%;
         line-height: 4rem;
-        padding: 8% 3rem;
+        padding: 0 3rem;
+        padding-top: 8rem;
         margin: 0;
         font-size: 4rem;
         text-align: center;
         font-weight: 800;
         text-transform: uppercase;
-    }
-
-    .icons-on-display-top {
-        margin-top: 1%;
-    }
-
-    .icons-on-display-bottom {
-        margin-bottom: 1%;
+        flex: 3;
     }
 
     .icons-on-display-top, .icons-on-display-bottom {
+        flex: 1;
         width: 100%;
-        height: 100%;
         position: relative;
+    }
+
+    .icons-on-display-bottom {
+        padding-bottom: 1.5rem;
     }
 
     .icons-on-display-top img, .icons-on-display-bottom img {
@@ -362,6 +361,10 @@ html, body{
     .our-products {
         overflow: hidden;
         background-color: rgb(240, 240, 240);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3rem;
     }
 
     .product-statement {
@@ -375,6 +378,8 @@ html, body{
         text-align: center;
         border-radius: 20px;
         box-shadow: 30px 35px 0px rgba(10, 10, 10, 0.4);
+        min-width: 440px;
+        height: fit-content;
     }
 
     .products-overview {
@@ -540,7 +545,7 @@ html, body{
     .member-information {
         background-color: var(--dark-gray);
         padding: 1rem 0;
-        height: 30%;
+        height: 100%;
     }
 
     .member-information > ul > li {
@@ -801,6 +806,62 @@ section.reviews {
 
 /* Start of pageFooter */
 
+@media only screen and (min-width: 769px) {
+    
+    footer .logo-and-contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgb(0, 89, 223);
+        color: rgb(240, 240, 240);
+        padding-top: 2rem;
+    }
+
+    footer svg line{
+        stroke: rgb(0, 89, 223);
+    }
+
+    footer svg path {
+        fill: rgb(0, 89, 223);
+    }
+
+    .footer-logo {
+        width: 20%;
+        flex: 1;
+    }
+
+    .contact-information {
+        flex: 3;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding-right: 3rem;
+    }
+
+    .contact-information ul {
+        list-style: none;
+    }
+
+    footer {
+        font-weight: 500;
+    }
+
+    .contact-information > ul > li {
+        line-height: 1.5rem;
+    }
+
+    .copyright {
+        width: 100%;
+        margin: 3rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+
+    .footer-logo svg {
+        width: 100%;
+        height: auto;
+    }
+}
 
 
 /* Phone Footer */
