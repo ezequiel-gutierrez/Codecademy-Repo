@@ -1,0 +1,8 @@
+:root {
+    font-size: 16px;
+    --primary-orange: rgb(219, 131, 59);
+    --secondary-cyan: rgb(59, 196, 219);
+    --dark-orange: rgb(156, 114, 81);
+    --dark-cyan: rgb(81, 127, 134);
+    --shading-color: rgb(44, 50, 51);
+}
