@@ -2,10 +2,10 @@
 
 :root {
     font-size: 16px;
-    --primary-orange: rgb(219, 131, 59);
-    --secondary-cyan: rgb(59, 196, 219);
-    --dark-orange: rgb(156, 114, 81);
-    --dark-cyan: rgb(81, 127, 134);
+    --primary-orange: rgb(255, 152, 67);
+    --light-orange: rgb(255, 221, 149);
+    --light-blue: rgb(134, 167, 252);
+    --dark-blue: rgb(52, 104, 192);
     --shading-color: rgb(44, 50, 51);
     box-sizing: border-box;
     padding: 0;
@@ -13,6 +13,7 @@
 }
 
 html, body {
+    background-color: var(--light-orange);
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -24,6 +25,7 @@ html, body {
 
 /* Desktop Styles */
 @media only screen and (min-width: 769px) {
+
     /* Header */
     header nav.mobile, footer {
         display: none;
@@ -31,12 +33,13 @@ html, body {
 
     header nav.desktop {
         background-color: var(--primary-orange);
-        width: auto;
+        width: calc(100vw - 3.5rem);
         height: 5.375rem;
         padding-left: 2.5rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: fixed;
     }
 
     nav .logo {
@@ -49,6 +52,7 @@ html, body {
         width: 100%;
         height: auto;
         transform: scale(2.5);
+        fill: var(--shading-color);
     }
     
     header nav .nav-options {
@@ -65,16 +69,13 @@ html, body {
         border: none;
         cursor: pointer;
         transition-duration: 0.5s;
+        color: var(--shading-color);
     }
 
     header nav .nav-options > button:hover {
-        background-color: rgb(209, 146, 94);
+        background-color: var(--light-blue);
+        color: var(--light-orange);
 
-    }
-
-    header nav .nav-options > button .add-button:hover .plus-symbol {
-        transform: rotate(360deg);
-        transition: all 0.5s ease-in-out;
     }
 
     header nav .nav-options > input {
@@ -82,7 +83,7 @@ html, body {
         height: 50%;
         width: 70%;
         border-radius:  200px;
-        background-color: rgb(209, 146, 94);
+        background-color: var(--light-orange);
         border: none;
         padding-left: 2rem;
     }
@@ -91,16 +92,212 @@ html, body {
         outline-style: none;
     }
 
-/* 
-    nav.desktop .logo {
-        flex: 1;
+    /* ------ */
+    /* Hero */
+
+    section.hero {
+        width: 100%;
+        height: 100vh;
+        background-image: url("../images/bg-hero.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        font-family: 'Fugaz One', Arial, Helvetica, sans-serif;
     }
 
-    nav.desktop .nav-options {
-        flex: 1;
-    } */
+    .hero h1 {
+        margin: 0;
+        padding: 0 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5rem;
+        background-color: rgba(44, 50, 51, 0.45);
+        color: var(--primary-orange);
+        border-radius: 8px;
+        cursor: default;
+    }
 
-    
+    /* ----- */
+    /* News */
+
+    section.news {
+        height: 100vh;
+        display: flex;
+        background-color: var(--light-orange);
+    }
+
+    .news-text {
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color:var(--dark-blue);
+    }
+
+    .news-text h2 {
+        margin: 0;
+        margin-left: 3.5rem;
+        margin-bottom: 3.5rem;
+        font-size: 3.5rem;
+        font-family: 'Fugaz One', Arial, Helvetica, sans-serif;
+    }
+
+    .news-text p {
+        margin: 0 3.5rem;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+    }
+
+    .news-image {
+        flex: 3.5;
+        background-image: url("../images/bg-section-opt-2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* ----- */
+    /*Image Display */
+
+    section.image-display {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--light-blue);
+    }
+
+    .image-display h2 {
+        margin: 0;
+        margin-top: 8rem;
+        margin-bottom: 4rem;
+        font-family: "Fugaz One", Arial, Helvetica, sans-serif;
+        font-size: 3.5rem;
+        color: var(--shading-color);
+    }
+
+    .image-container {
+        width: calc(100% - 7rem);
+        margin:  0 3.5rem;
+        display: grid;
+        grid-template: repeat(7, 20vh) / repeat(8, 1fr);
+        gap: 15px;
+        margin-bottom: 8rem;
+    }
+
+    .image-box {
+        border-radius: 1rem;
+    }
+
+    .photography-1 {
+        background: url("../images/flowers-1.jpg") no-repeat center;
+        background-size: cover;
+        grid-row: 1 / 3;
+        grid-column: 1 / 3;
+    }
+
+    .photography-2 {
+        background: url("../images/flowers-2.jpg") no-repeat left;
+        background-size: cover;
+        grid-row: 1 / 5;
+        grid-column: 3 / 7;
+    }
+
+    .photography-3 {
+        background: url("../images/flowers-3.jpg") no-repeat center;
+        background-size: cover;
+        grid-area: 1 / 7 / 3 / 9;
+    }
+
+    .photography-4 {
+        background: url("../images/flowers-4.jpg") no-repeat right;
+        background-size: cover;
+        grid-area: 3 / 1 / 6 / 3;
+    }
+
+    .photography-5 {
+        background: url("../images/flowers-5.jpg") no-repeat bottom center;
+        background-size: cover;
+        grid-area: 3 / 7 / 5 / 9;
+    }
+
+    .photography-6 {
+        background: url("../images/flowers-6.jpg") no-repeat bottom;
+        background-size: cover;
+        grid-area: 5 / 3 / 8 / 6;
+    }
+
+    .photography-7 {
+        background: url("../images/flowers-7.jpg") no-repeat left;
+        background-size: cover;
+        grid-area: 5 / 6 / 8 / 9;
+    }
+
+    .photography-8 {
+        background: url("../images/flowers-8.jpg") no-repeat left;
+        background-size: cover;
+        grid-area: 6 / 1 / 8 / 3;
+    }
+
+    /* ----- */
+    /* Section cta */
+
+    section.cta {
+        height: 100vh;
+        background-color: var(--light-orange);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--shading-color);
+    }
+
+    .cta h2 {
+        margin: 0;
+        margin-bottom: 2.5rem;
+        font-size: 3.5rem;
+        font-family: 'Fugaz One', Arial, Helvetica, sans-serif;
+    }
+
+    .cta p {
+        letter-spacing: -1px;
+        margin: 0;
+        font-size: 1.8rem;
+        margin-bottom: 3.5rem;
+        font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+    }
+
+    .cta button {
+        width: 40%;
+        padding: 2rem;
+        border: none;
+        background-color: var(--dark-blue);
+        font-size: 2rem;
+        color: rgb(255, 239, 204);
+        font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+        border-radius: 200px;
+        cursor: pointer;
+    }
+
+    .cta > button:hover {
+        background-color: rgb(44, 86, 160);
+        color: rgb(255, 208, 107);
+        transition: all 0.2s ease;
+    }
+
+    /* ----- */
+    /* I want to make some cool stuff */
+
+        header .desktop .logo:hover {
+            transition: all 0.8s ease-in-out;
+            transform: rotate(360deg);
+        }
+
+
 }
 /* End Of Desktop Styles */
 
