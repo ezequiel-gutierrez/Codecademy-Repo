@@ -297,6 +297,10 @@ html, body {
             transform: rotate(360deg);
         }
 
+    .image-box img {
+        display: none;
+    }
+
 
 }
 /* End Of Desktop Styles */
@@ -309,5 +313,180 @@ html, body {
     header nav.desktop, .hero h1 {
         display: none;
     }
+
+    header nav.mobile {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        height: 5.375rem;
+        font-size: 1.5rem;
+        font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+        position: fixed;
+        top: 0;
+        background-color: rgba(44, 50, 51, 0.4);
+    }
+
+    .logo {
+        margin: 0 1rem;
+    }
+
+    .logo svg {
+        transform: scale(1.5);
+    }
+
+    /* ----- */
+    /* Footer */
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        height: 2.6875rem;
+        width: 100%;
+        background-color: rgba(44, 50, 51, 0.4);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    /* ----- */
+    /* Start of Hero */
+
+    section.hero {
+        background-image: url("../images/bg-hero.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    /* ----- */
+    /* Section News */
+
+    section.news {
+        background-image: url("../images/bg-section-opt-2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .news .news-text {
+        margin: 1rem;
+        height: 90%;
+        background-color: rgb(240, 240, 240);
+        border-radius: 20px;
+        padding: 0 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--dark-blue)
+    }
+
+    .news-text h2 {
+        margin: 0;
+        font-size: 3.2rem;
+        line-height: 3.8rem;
+        font-family: 'Fugaz One', Arial, Helvetica, sans-serif;
+        margin-bottom: 2rem;
+    }
+
+    .news-text p {
+        font-size: 1.5rem;
+        letter-spacing: -1px;
+        line-height: 2rem;
+        font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+    }
+
+    .news .news-image {
+        display: none;
+    }
+
+    /* ----- */
+    /* Display Section */
+
+    section.image-display {
+        background-color: var(--light-blue);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2.2rem;
+        color: var(--shading-color);
+        font-family: "Fugaz One", Arial, Helvetica, sans-serif;
+        height: fit-content;
+    }
+    
+    .image-display h2 {
+        margin: 3rem;
+    }
+    
+    .image-display .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .image-box {
+        width: 40%;
+        height: auto;
+        margin: 1.5rem;
+    }
+    
+    .image-box img {
+        width: 100%;
+        height: auto;
+        border: solid 3px var(--shading-color);
+        border-radius: 5px;
+    }
+
+    /* ----- */
+    /* Section cta */
+
+    section.cta {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--shading-color);
+    }
+
+    .cta h2 {
+        text-align: center;
+        margin: 2rem;
+        font-family: "Fugaz One", Arial, Helvetica, sans-serif;
+        font-size: 2.3rem;
+    }
+
+    .cta p {
+        text-align: center;
+        margin: 0 2rem;
+        margin-bottom: 2rem;
+        letter-spacing: -1px;
+        font-size: 1.8rem;
+        font-family: "Josepin Sans", Arial, Helvetica, sans-serif;
+    }
+
+    .cta button {
+        background-color: var(--dark-blue);
+        color: rgb(255, 239, 204);
+        width: 60%;
+        border: none;
+        padding: 1rem 2rem;
+        font-size: 1.8rem;
+        font-family: "Josepin Sans", Arial, Helvetica, sans-serif;
+        border-radius: 90px;
+    }
+
+    .cta button:hover {
+        background-color: rgb(44, 86, 160);
+        color: rgb(255, 208, 107);
+        transition: all 0.2s ease;
+    }
+
 }
 /* End of Mobile Styles */
