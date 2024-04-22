@@ -24,22 +24,57 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 
 // Add your functions below:
+
+// Find Valid Cards
 function validateCred(arr) {
     let reversedCardNumber = arr.slice().reverse();
+    let validationNumber = reversedCardNumber[0];
     for(let i = 1; i < reversedCardNumber.length; i += 2) {
         reversedCardNumber[i] *= 2;
         if (reversedCardNumber[i] > 9) {
-            reversedCardNumber[i] - 9;
+            reversedCardNumber[i] -= 9
         }
     }
-    return reversedCardNumber;
+    let moduleArray = reversedCardNumber.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    let checkCardValidation = moduleArray % 10;
+    if (checkCardValidation === 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
-console.log(validateCred(valid1));
+// console.log(validateCred(valid1));
 
-// You are trying to doule every other number, good luck! lol
+// Find Invalid Cards
 
+function findInvalidCards(arr) {
+    let invalidCardArray = arr.filter((element) => validateCred(element) === false);
+    return invalidCardArray;
+}
 
+// findInvalidCards(batch);
 
+// Find company
+function invalidCardCompanies(arr) {
+    let firstInvalidDigits = findInvalidCards(arr).map((element) => element[0]);
+    let uniqueInvalidDigits = firstInvalidDigits.filter((element, index) => firstInvalidDigits.indexOf(element) === index);
+    let invalidCompanies = uniqueInvalidDigits.map((element) => {
+        switch (element) {
+            case 3:
+                return "Amex (American Express)";
+            case 4:
+                return "Visa";
+            case 5:
+                return "Mastercard";
+            case 6:
+                return "Discover";
+            default: 
+                return "Company not found";
+        }
+    });
 
+    return invalidCompanies;
+}
 
+console.log(invalidCardCompanies(batch));
