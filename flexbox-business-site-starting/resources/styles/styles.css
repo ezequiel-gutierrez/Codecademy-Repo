@@ -380,6 +380,7 @@ html, body{
         box-shadow: 30px 35px 0px rgba(10, 10, 10, 0.4);
         min-width: 440px;
         height: fit-content;
+        /* max-width: 33%; */
     }
 
     .products-overview {
